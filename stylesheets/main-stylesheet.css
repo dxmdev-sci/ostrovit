@@ -1,0 +1,95 @@
+/* debug 
+body * {
+    border: 1px dotted black;
+}
+/* Poppins font */
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins/Poppins-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins/Poppins-Italic.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins/Poppins-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+/* ----- Root ----- */
+:root {
+    --poppinsFullSize: 1.5;
+}
+html {
+    font-size : 0.875em; /* default 14px */
+}
+body {
+    font-family : "Poppins" !important;
+}
+
+/* ------ navigation bar ----- */
+:root{
+    --nav-panel-height: 5.5625em;
+}
+nav {
+    height: var(--nav-panel-height);
+}
+nav header > img {
+    width: 10em;
+    height: 3.3em;
+}
+ul.navLinks {
+    list-style: none;
+}
+ul.navLinks li {
+    margin: 0 1.5em;
+    font-weight: bold;
+}
+#siteNav input {
+    margin: 0 1.5em;
+    width: 19.5em;
+    height: 2.5em;
+    border: 1px solid #ECECEC;
+}
+nav a {
+    color: inherit;
+}
+nav a:hover {
+    color: #3C0B8F;
+}
+nav :nth-child(n), nav li {
+    display: inline-block;
+}
+
+/* elements positioning */
+#siteNav {
+    position: relative;
+    top: calc(var(--nav-panel-height) / 2 - 1rem*var(--poppinsFullSize));
+}
+nav header {
+    position: relative;
+    top: 1.15em;
+}
+
+/* ----- news alert box ----- */
+.newsAlertBox {
+    --height: 3.75em;
+    background: #F5F5F5;
+    height: var(--height);
+    padding-top: calc(var(--height) / 2 - 1rem*var(--poppinsFullSize)/2);
+}
+/* ----- misc ----- */
+.centerText {
+    text-align: center;
+}
+nav.wrapper {
+    width: 1400px;
+    margin: 0 auto;
+}

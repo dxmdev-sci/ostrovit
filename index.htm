@@ -2,7 +2,7 @@
 <html lang="pl">
     <head>
         <title>OstroVit</title>
-        <link href="stylesheets/main-stylesheet.css">
+        <link rel="stylesheet" href="stylesheets/main-stylesheet.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,31 +18,33 @@
 
     <body>
         <!-- Top site navigation bar -->
-        <nav>
+        <nav class="wrapper">
             <!-- Logo -->
             <header id="navLogo">
-                <!-- placeholder -->
+                <img src="graphics/logo_no_padding.png" alt="OstroVit">
             </header>
 
-            <!-- Site navigation links -->
-            <ul class="navLinks">
-                <a href="#"><li> Suplementy          </li></a>
-                <a href="#"><li> Dla sportowców      </li></a>
-                <a href="#"><li> Zioła i ekstrakty   </li></a>
-                <a href="#"><li> Żywność             </li></a>
-            </ul>
+            <div id="siteNav">
+                <!-- Site navigation links -->
+                <ul class="navLinks">
+                    <a href="#"><li> Suplementy          </li></a>
+                    <a href="#"><li> Dla sportowców      </li></a>
+                    <a href="#"><li> Zioła i ekstrakty   </li></a>
+                    <a href="#"><li> Żywność             </li></a>
+                </ul>
 
-            <!-- Site navigation search bar -->
-            <input type="text" id="searchbar">
+                <!-- Site navigation search bar -->
+                <input type="text" id="searchbar">
 
-            <!-- User panel -->
-            <div id="userpanel">
-                <a href="user/account"><!-- placeholder svg / font-icon --></a>
+                <!-- User panel -->
+                <div id="userpanel">
+                    <a href="user/account"><!-- placeholder svg / font-icon --></a>
+                </div>
             </div>
         </nav>
 
         <!-- news banner -->
-        <aside class="centerText">
+        <aside class="centerText newsAlertBox">
             <span> Przedłużyliśmy okres dokonywania zwrotów do 60 dni. 
             <a href="info/zwroty">Dowiedz się więcej</a></span>
         </aside>
