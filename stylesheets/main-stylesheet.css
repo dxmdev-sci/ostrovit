@@ -1,5 +1,5 @@
-/* debug 
-body * {
+/* debug */
+/*body * {
     border: 1px dotted black;
 }
 /* Poppins font */
@@ -58,6 +58,9 @@ ul.navLinks li {
     height: 2.5em;
     border: 1px solid #ECECEC;
 }
+#siteNav {
+    width: calc(100% - 10.5em);
+}
 nav a {
     color: inherit;
 }
@@ -66,6 +69,12 @@ nav a:hover {
 }
 nav :nth-child(n), nav li {
     display: inline-block;
+}
+#userpanel {
+    margin-top: 4px;
+}
+#userpanel a {
+    margin: 0 .46em;
 }
 
 /* elements positioning */
