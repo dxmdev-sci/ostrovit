@@ -3,17 +3,21 @@
     <head>
         <title>OstroVit</title>
         <link rel="stylesheet" href="stylesheets/main-stylesheet.css">
+        <link rel="stylesheet" href="stylesheets/product_page_styles.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- External Sources: -->
-        <!-- Bootstrap 4.4.1 -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-        <!-- JQuery 3.4.1 slim -->
+        <!-- JQuery  -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
         <!-- Popper.js 1.16 -->
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <!-- Bootstrap 4.4.1 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!-- Slick -->
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     </head>
 
     <body>
@@ -21,7 +25,7 @@
         <nav class="wrapper">
             <!-- Logo -->
             <header id="navLogo">
-                <img src="graphics/logo_no_padding.png" alt="OstroVit">
+                <img src="graphics/logo_no_padding.svg" alt="OstroVit">
             </header>
 
             <div id="siteNav">
@@ -37,7 +41,7 @@
                 <input type="text" id="searchbar">
  
                 <!-- User panel -->
-                <div id="userpanel" class="float-right">
+                <div id="userpanel" class="text-right">
                     <a href="user/account"><img src="graphics/account.svg" alt="account"></a>
                     <a href="help/">Pomoc</a>
                     <a href="#">PL / PLN</a>
@@ -54,8 +58,47 @@
             <a href="info/zwroty">Dowiedz się więcej</a></span>
         </aside>
 
-        <main>
+        <main id="productPerformance">
+            <!-- Carousel -->
+            <div id="productCarousel" class="wrapper">
+                
+                <!-- Product 1 -->
+                <div id="homeProduct1" class="wrapper productBox">
+                    <section class="productDescription">
+                        <h4>Najczystrza forma magnezu</h4>
+                        <h1>MAGNESIUM CITRATE</h1>
+                        <span>OstroVit Supreme Pure Magnesium Citrate to suplement diety
+                            w proszku opracowany przy wykorzystaniu wyłącznie pożądanego
+                            w tym wypadku cytrynianu magnezu.</span>
+                        <div class="buyOptions">
+                            <a href="#"><button class="buyBtn">Kup teraz</button></a>
+                            <span>24,90 zł</span>
+                        </div>
+                    </section>
+                    <section class="productImage">
+                        <div class="rounded-circle new">NOWOŚĆ</div>
+                        <img src="graphics/product1.svg">
+                    </section>
+                </div>
 
+                <!-- Product 2 -->
+                <div id="homeProduct2" class="wrapper productBox">
+                    <section class="productDescription">
+                        <h4>Najczystrza forma magnezu</h4>
+                        <h1>MAGNESIUM 2</h1>
+                        <span>sdfsdfadsflkajsdhflakjsdhfl</span>
+                        <div class="buyOptions">
+                            <a href="#"><button class="buyBtn">Kup teraz</button></a>
+                            <span>24,90 zł</span>
+                        </div>
+                    </section>
+                    <section class="productImage">
+                        <div class="rounded-circle new">NOWOŚĆ</div>
+                        <img src="graphics/product1.svg">
+                    </section>
+                </div>
+            </div>
+            <div class="wrapper" id="productCarouselDots"></div>
         </main>
 
         <footer>
@@ -63,5 +106,12 @@
 
             </div>
         </footer>
+        <script>
+            $("#productCarousel").slick({
+                arrows: false,
+                dots: true,
+                appendDots: $("#productCarouselDots")
+            });
+        </script>
     </body>
 </html>

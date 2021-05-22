@@ -1,0 +1,53 @@
+#productPerformance {
+    background-image: url("../graphics/product_background.svg");
+    min-height: 80vh;
+}
+.productBox {
+    padding-top: 7em;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+}
+.productBox .productDescription {
+    padding: 2.5em 3em;
+}
+.productDescription h1 {
+    font-weight: bold;
+    font-size: 4.286rem;
+    margin-bottom: .5em;
+}
+.productDescription span {
+    font-weight: 300;
+    font-size: 1.14rem;
+}
+.productImage {
+    text-align: center;
+}
+.productImage .new.rounded-circle {
+    --size: 6em;
+}
+.productImage .rounded-circle {
+    text-transform: uppercase;
+    transform: translateX(15em);
+    top: 1.6em;
+    text-align: center;
+    background-color: #3C0B8F;
+    position: absolute;
+    color: white;
+    font-size: 1.85rem;
+    font-weight: bold;
+    padding-top: calc(var(--size) / 2 - 1.85rem*var(--poppinsFullSize)/2 );
+    width: var(--size);
+    height: var(--size);
+}
+.buyOptions {
+    margin-top: 2em;
+}
+.buyOptions span {
+    font-size: 3rem;
+    vertical-align: bottom;
+    font-weight: bold;
+}
+.buyOptions .buyBtn {
+    padding: 1em 1.8em;
+    margin-right: 1.5em;
+}
