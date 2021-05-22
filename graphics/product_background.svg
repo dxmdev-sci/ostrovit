@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2085" height="653" viewBox="0 0 2085 653">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_104" data-name="Path 104" d="M0,0H1920V650H0Z" transform="translate(0 149)" fill="#f8f8f8"/>
+    </clipPath>
+  </defs>
+  <g id="banner" transform="translate(0 -149)">
+    <g id="Group_1786" data-name="Group 1786">
+      <path id="Path_95" data-name="Path 95" d="M0,0H1920V650H0Z" transform="translate(0 152)" fill="#fbfbfb"/>
+      <g id="Ellipse_24" data-name="Ellipse 24" transform="translate(1828 190)" fill="none" stroke="#3926a2" stroke-width="15" opacity="0.1">
+        <circle cx="128.5" cy="128.5" r="128.5" stroke="none"/>
+        <circle cx="128.5" cy="128.5" r="121" fill="none"/>
+      </g>
+    </g>
+    <g id="Rectangle_137" data-name="Rectangle 137" transform="translate(852 203)" fill="none" stroke="#f5f5f5" stroke-width="25">
+      <rect width="806" height="473" stroke="none"/>
+      <rect x="12.5" y="12.5" width="781" height="448" fill="none"/>
+    </g>
+    <rect id="Rectangle_138" data-name="Rectangle 138" width="139" height="312" transform="translate(811 272)" fill="#fbfbfb"/>
+    <g id="Group_8" data-name="Group 8" clip-path="url(#clip-path)">
+      <g id="Ellipse_12" data-name="Ellipse 12" transform="translate(-364 525)" fill="none" stroke="#3926a2" stroke-width="20" opacity="0.1">
+        <circle cx="274.5" cy="274.5" r="274.5" stroke="none"/>
+        <circle cx="274.5" cy="274.5" r="264.5" fill="none"/>
+      </g>
+    </g>
+    <rect id="Rectangle_139" data-name="Rectangle 139" width="7" height="24" transform="translate(94 265)" fill="#3926a2" opacity="0.15"/>
+    <g id="Group_475" data-name="Group 475" transform="translate(1935.25 295.66) rotate(45)" opacity="0.15">
+      <rect id="Rectangle_142" data-name="Rectangle 142" width="7" height="24" transform="translate(129 325)" fill="#3c0b8f"/>
+      <rect id="Rectangle_143" data-name="Rectangle 143" width="7" height="24" transform="translate(145 334) rotate(90)" fill="#3c0b8f"/>
+    </g>
+    <rect id="Rectangle_144" data-name="Rectangle 144" width="7" height="24" transform="translate(1739 220)" fill="#f2f2f2"/>
+    <g id="Group_470" data-name="Group 470" transform="translate(918.25 -125.34) rotate(45)" opacity="0.15">
+      <rect id="Rectangle_142-2" data-name="Rectangle 142" width="7" height="24" transform="translate(129 325)" fill="#3c0b8f"/>
+      <rect id="Rectangle_143-2" data-name="Rectangle 143" width="7" height="24" transform="translate(145 334) rotate(90)" fill="#3c0b8f"/>
+    </g>
+  </g>
+</svg>
