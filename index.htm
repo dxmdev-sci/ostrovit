@@ -38,10 +38,13 @@
                 </ul>
 
                 <!-- Site navigation search bar -->
-                <input type="text" id="searchbar">
+                <div id="searchbar" class="d-inline-block">
+                    <button class="searchBtn"></button>
+                    <input type="text">
+                </div>
  
                 <!-- User panel -->
-                <div id="userpanel" class="text-right">
+                <div id="userpanel" class="float-right">
                     <a href="user/account"><img src="graphics/account.svg" alt="account"></a>
                     <a href="help/">Pomoc</a>
                     <a href="#">PL / PLN</a>
@@ -67,9 +70,9 @@
                     <section class="productDescription">
                         <h4>Najczystrza forma magnezu</h4>
                         <h1>MAGNESIUM CITRATE</h1>
-                        <span>OstroVit Supreme Pure Magnesium Citrate to suplement diety
+                        <p>OstroVit Supreme Pure Magnesium Citrate to suplement diety
                             w proszku opracowany przy wykorzystaniu wyłącznie pożądanego
-                            w tym wypadku cytrynianu magnezu.</span>
+                            w tym wypadku cytrynianu magnezu.</p>
                         <div class="buyOptions">
                             <a href="#"><button class="buyBtn">Kup teraz</button></a>
                             <span>24,90 zł</span>
@@ -94,7 +97,7 @@
                     </section>
                     <section class="productImage">
                         <div class="rounded-circle new">NOWOŚĆ</div>
-                        <img src="graphics/product1.svg">
+                        <img alt="product1" src="graphics/product1.svg">
                     </section>
                 </div>
             </div>
@@ -102,8 +105,52 @@
         </main>
 
         <footer>
-            <div class="rwdgrid-c4-auto">
+            <div class="container">
+                <div class="row">
+                    <!-- 1 Safe shoping -->
+                    <div class="col-sm">
+                        <div class="shopping-promotion">
+                            <img src="graphics/footer/padlock.svg">
+                            <div>
+                                <h6>Bezpieczne zakupy</h6>
+                                Szyfrowanie danych SSL OV
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- 2 Fast shipping -->
+                    <div class="col-sm">
+                        <div class="shopping-promotion">
+                            <img src="graphics/footer/transport.svg">
+                            <div>
+                                <h6>Szybka wysyłka</h6>
+                                Zamówienie wysłane w 24h
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 Buy even more! -->
+                    <div class="col-lg">
+                        <div class="shopping-promotion">
+                            <img src="graphics/footer/piggy_bank.svg">
+                            <div>
+                                <h6>Kupuj jeszcze taniej</h6>
+                                Atrakcyjny program
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 Abroad shipping -->
+                    <div class="col-sm">
+                        <div class="shopping-promotion">
+                            <img src="graphics/footer/world.svg">
+                            <div>
+                                <h6>Wysyłka zagraniczna</h6>
+                                Ponad 25 krajów na świecie
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
         <script>

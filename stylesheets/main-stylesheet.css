@@ -48,6 +48,7 @@ nav {
     height: var(--nav-panel-height);
 }
 nav header > img {
+    margin-left: .4em;
     width: 10em;
     height: 3.3em;
 }
@@ -58,14 +59,9 @@ ul.navLinks li {
     margin: 0 1.5em;
     font-weight: bold;
 }
-#siteNav input {
-    margin: 0 1.5em;
-    width: 19.5em;
-    height: 2.5em;
-    border: 1px solid #ECECEC;
-}
+
 #siteNav {
-    width: calc(100% - 10.5em);
+    width: calc(100% - 10.7em);
 }
 nav a {
     color: inherit;
@@ -93,6 +89,36 @@ nav header {
     top: 1.15em;
 }
 
+/* --- searchbar --- */
+#searchbar {
+    text-align: right;
+    margin: 0 1.5em;
+    width: 19.5em;
+    height: 2.5em;
+    border: 1px solid #ECECEC;
+}
+#searchbar :nth-child(n) {
+    display: inline-block;
+}
+.searchBtn {
+    vertical-align: top;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    width: 2em;
+    background-image: url("../graphics/magnifiying_glass.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+#searchbar > input {
+    width: calc(100% - 2.3em);
+    padding-left: 1em;
+    height: 100%;
+    border: 0;
+}
+
+
 /* ----- news alert box ----- */
 .newsAlertBox {
     --height: 3.75em;
@@ -107,15 +133,21 @@ nav header {
 .newsAlertBox a:hover {
     color: #3C0B8F;
 }
+/* ----- main ----- */
+main {
+    min-height: 70vh;
+}
+
 /* ----- misc ----- */
 .centerText {
     text-align: center;
 }
 nav.wrapper {
-    width: 1400px; 
+    max-width: 1400px;
 }
 .wrapper {
-    width: 1200px;
+    width: 100%; 
+    max-width: 1200px;
     margin: 0 auto;
 }
 .buyBtn {
@@ -123,6 +155,22 @@ nav.wrapper {
     background:#3926A2;
     font-size: 1.14rem;
     color: white;
+}
+/* ----- footer ----- */
+footer {
+    margin-top: 4em;
+}
+.shopping-promotion {
+    display: grid;
+    grid-template-columns: fit-content(2.7em) auto;
+}
+.shopping-promotion div {
+    padding-left: 1em;
+}
+.shopping-promotion div h6 {
+    font-weight: bold;
+    margin-bottom: 0;
+    text-transform: uppercase;
 }
 
 /* slick carousel */
@@ -146,4 +194,18 @@ ul.slick-dots {
     width: 23px;
     height: 23px;
     transform: translateY(-3px);
+}
+
+/* ----- Responsive web design ----- */
+@media (max-width: 1320px){
+    ul.navLinks {
+        padding-left: 1em;
+    }
+    #searchbar {
+        margin: 0 .2em;
+        width: 20vw;
+    }
+    ul.navLinks li {
+        margin: 0 1em;
+    }
 }

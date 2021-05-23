@@ -1,6 +1,6 @@
 #productPerformance {
     background-image: url("../graphics/product_background.svg");
-    min-height: 80vh;
+    height: 100%;
 }
 .productBox {
     padding-top: 7em;
@@ -15,7 +15,7 @@
     font-size: 4.286rem;
     margin-bottom: .5em;
 }
-.productDescription span {
+.productDescription p {
     font-weight: 300;
     font-size: 1.14rem;
 }
@@ -50,4 +50,21 @@
 .buyOptions .buyBtn {
     padding: 1em 1.8em;
     margin-right: 1.5em;
+}
+
+/* ----- Responsive web design ----- */
+
+/* large screen */
+@media (max-width: 1199px) {
+    .productBox .productDescription {
+        padding: 2.5em .5em;
+    }
+}
+/* medium screen */
+@media (max-width: 991px) {
+
+}
+/* small screen */
+@media (max-width: 767px) {
+    
 }
