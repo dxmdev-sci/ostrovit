@@ -22,6 +22,7 @@
 .productImage {
     text-align: center;
 }
+/* circle on top of image, ex. Nowość */
 .productImage .new.rounded-circle {
     --size: 6em;
 }
@@ -39,6 +40,8 @@
     width: var(--size);
     height: var(--size);
 }
+
+/* price and buy buttion */
 .buyOptions {
     margin-top: 2em;
 }
@@ -53,6 +56,26 @@
 }
 
 /* ----- Responsive web design ----- */
+@media (min-width: 920px) and (max-width: 1080px) {
+    .productImage .rounded-circle {
+        transform: translateX(14.2em);
+    }
+}
+@media (max-width: 920px) {
+    .productBox {
+        grid-template-columns: auto;
+    }
+    .productBox .productDescription {
+        padding: 2.5em 1.2em !important;
+        order: 2;
+    }
+    .productImage {
+        margin: 0 auto;
+    }
+    #productCarouselDots {
+        text-align: center;
+    }
+}
 
 /* large screen */
 @media (max-width: 1199px) {

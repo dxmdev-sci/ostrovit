@@ -21,8 +21,14 @@
     </head>
 
     <body>
+        <!-- TODO 
+           # Mobile navigation,
+           # product image max size
+        -->
+        
+
         <!-- Top site navigation bar -->
-        <nav class="wrapper">
+        <nav class="wrapper desktop">
             <!-- Logo -->
             <header id="navLogo">
                 <img src="graphics/logo_no_padding.svg" alt="OstroVit">
@@ -38,18 +44,37 @@
                 </ul>
 
                 <!-- Site navigation search bar -->
-                <div id="searchbar" class="d-inline-block">
+                <div class="searchbar d-inline-block">
                     <button class="searchBtn"></button>
                     <input type="text">
                 </div>
  
                 <!-- User panel -->
-                <div id="userpanel" class="float-right">
+                <div class="userpanel float-right">
+                    <!-- account -->
                     <a href="user/account"><img src="graphics/account.svg" alt="account"></a>
-                    <a href="help/">Pomoc</a>
-                    <a href="#">PL / PLN</a>
-                    <a href="wishlist/"><img src="graphics/list.svg" alt="wishlist"></a>
+
+                    <!-- support, wishlist, currency -->
+                    <!-- move to dropdown on small screens * -->
+                    <div id="additionalOptions">
+                        <a href="help/">Pomoc</a>
+                        <a href="#">PL / PLN</a>
+                        <a href="wishlist/"><img src="graphics/list.svg" alt="wishlist"></a>
+                    </div>
+
+                    <!-- shopping cart -->
                     <a href="cart/"><img src="graphics/cart.svg" alt="shopping-cart"></a>
+
+                    <!-- * moved options dropdown on small devices -->
+                    <div id="additionalMenu" class="dropdown d-none">
+                        <button class="btn" id="additionalMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="additionalMenuButton">
+                            <a class="dropdown-item" href="help/">Pomoc</a>
+                            <a class="dropdown-item" href="#">PL / PLN</a>
+                            <a class="dropdown-item" href="wishlist/">Lista życzeń &nbsp; <img src="graphics/list.svg" alt="wishlist"></a>
+                        </div>
+                    </div>
+
                 </div>
                 
             </div>
@@ -108,9 +133,9 @@
             <div class="container">
                 <div class="row">
                     <!-- 1 Safe shoping -->
-                    <div class="col-sm">
+                    <div class="col-md">
                         <div class="shopping-promotion">
-                            <img src="graphics/footer/padlock.svg">
+                            <img alt="safe shoping" src="graphics/footer/padlock.svg">
                             <div>
                                 <h6>Bezpieczne zakupy</h6>
                                 Szyfrowanie danych SSL OV
@@ -118,10 +143,10 @@
                         </div>
                     </div>
 
-                    <!-- 2 Fast shipping -->
-                    <div class="col-sm">
+                    <!-- 2 Fast delivery -->
+                    <div class="col-md">
                         <div class="shopping-promotion">
-                            <img src="graphics/footer/transport.svg">
+                            <img alt="fast delivery" src="graphics/footer/transport.svg">
                             <div>
                                 <h6>Szybka wysyłka</h6>
                                 Zamówienie wysłane w 24h
@@ -129,10 +154,13 @@
                         </div>
                     </div>
 
+                    <!-- break line -->
+                    <div class="d-block d-xl-none w-100"></div>
+
                     <!-- 3 Buy even more! -->
-                    <div class="col-lg">
+                    <div class="col-md">
                         <div class="shopping-promotion">
-                            <img src="graphics/footer/piggy_bank.svg">
+                            <img alt="save money" src="graphics/footer/piggy_bank.svg">
                             <div>
                                 <h6>Kupuj jeszcze taniej</h6>
                                 Atrakcyjny program
@@ -141,9 +169,9 @@
                     </div>
 
                     <!-- 4 Abroad shipping -->
-                    <div class="col-sm">
+                    <div class="col-md">
                         <div class="shopping-promotion">
-                            <img src="graphics/footer/world.svg">
+                            <img alt="abroad shipping" src="graphics/footer/world.svg">
                             <div>
                                 <h6>Wysyłka zagraniczna</h6>
                                 Ponad 25 krajów na świecie
