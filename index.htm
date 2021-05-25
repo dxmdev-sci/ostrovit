@@ -18,23 +18,21 @@
         <!-- Slick -->
         <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <!-- font awesome for hamburger icon -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     </head>
 
     <body>
-        <!-- TODO 
-           # Mobile navigation,
-           # product image max size
-        -->
         
 
         <!-- Top site navigation bar -->
-        <nav class="wrapper desktop">
+        <nav class="wrapper">
             <!-- Logo -->
             <header id="navLogo">
                 <img src="graphics/logo_no_padding.svg" alt="OstroVit">
             </header>
 
-            <div id="siteNav">
+            <div class="siteNav desktop">
                 <!-- Site navigation links -->
                 <ul class="navLinks">
                     <a href="#"><li> Suplementy          </li></a>
@@ -54,7 +52,7 @@
                     <!-- account -->
                     <a href="user/account"><img src="graphics/account.svg" alt="account"></a>
 
-                    <!-- support, wishlist, currency -->
+                    
                     <!-- move to dropdown on small screens * -->
                     <div id="additionalOptions">
                         <a href="help/">Pomoc</a>
@@ -78,7 +76,41 @@
                 </div>
                 
             </div>
+            <!-- mobile nav -->
+            <div class="siteNav mobile d-inline-block">
+                <div class="float-right">
+                    <!-- wishlist-->
+                    <a href="wishlist/"><img src="graphics/list.svg" alt="wishlist"></a>
+                   
+                    <!-- account -->
+                    <a href="user/account"><img src="graphics/account.svg" alt="account"></a>
+                    <!-- shopping cart -->
+                    <a href="cart/"><img src="graphics/cart.svg" alt="shopping-cart"></a>
+                    
+                    <!-- hamburger -->
+                    <button class="btn" onclick="$('#mobileMenu').toggleClass('show');"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>  
         </nav>
+        <!-- mobile dropdown menu -->
+        <div id="mobileMenu" class="mobile w-100 aThemed">
+            <!-- Site navigation search bar -->
+            <div class="searchbar w-100">
+                <button class="d-inline-block searchBtn"></button>
+                <input class="d-inline-block " type="text">
+            </div>
+            <hr>
+            <!-- Site navigation links -->
+            <ul class="navLinks">
+                <a href="#"><li> Suplementy          </li></a>
+                <a href="#"><li> Dla sportowców      </li></a>
+                <a href="#"><li> Zioła i ekstrakty   </li></a>
+                <a href="#"><li> Żywność             </li></a>
+            </ul>
+
+
+        </div>
+        
 
         <!-- news banner -->
         <aside class="centerText newsAlertBox">

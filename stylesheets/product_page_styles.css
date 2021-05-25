@@ -22,6 +22,10 @@
 .productImage {
     text-align: center;
 }
+.productImage img {
+    min-width: 40vw;
+    max-width: 99%;
+}
 /* circle on top of image, ex. Nowość */
 .productImage .new.rounded-circle {
     --size: 6em;
@@ -56,11 +60,25 @@
 }
 
 /* ----- Responsive web design ----- */
+/*circle on top of product image */
 @media (min-width: 920px) and (max-width: 1080px) {
     .productImage .rounded-circle {
-        transform: translateX(14.2em);
+        transform: translateX(14em);
     }
 }
+@media (min-width: 920px) and (max-width:1020px){
+    .productImage .rounded-circle {
+    transform: translateX(12em);
+    }
+}
+@media (max-width: 540px) {
+    .productImage .rounded-circle {
+        transform: none;
+    }
+}
+/* ----------------------------------- */
+
+
 @media (max-width: 920px) {
     .productBox {
         grid-template-columns: auto;
