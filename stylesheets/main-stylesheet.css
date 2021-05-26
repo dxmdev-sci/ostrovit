@@ -81,6 +81,7 @@ nav :nth-child(n), nav li {
 /* mobile nav */
 .siteNav.mobile :nth-child(n) {
     margin-right: .8em;
+    margin-top: .2em;
 }
 #mobileMenu {
     display: none !important;
@@ -178,9 +179,11 @@ nav.wrapper {
     font-size: 1.14rem;
     color: white;
 }
-.mobile {
+/* mobile */
+.mobile, .d-inline-block.mobile {
     display: none !important;
 }
+
 /* ----- footer ----- */
 footer {
     margin-top: 4em;
@@ -252,9 +255,12 @@ ul.slick-dots {
     .mobile {
         display: block !important;
     }
-    nav header {
-        top: .9em;
+    .d-inline-block.mobile {
+        display: inline-block !important;
     }
+    nav header {
+        top: .2em;
+    } /**/
 }
 /* small screen */
 @media (max-width: 767px) {
